@@ -11,7 +11,7 @@ const Menu = () => (
     <p><a href='#features'>Case Studies</a></p>
     <p><a href='#blog'>Library</a></p>
   </>
-)
+);
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -40,15 +40,15 @@ const Navbar = () => {
             <div className='gpt3__navbar-menu_container-links'>
               <Menu />
               <div className='gpt3__navbar-menu_container-links-sign'>
-              <p>Sign in</p>
-              <button type='button'>Sign up</button>
-            </div>
+                <p>Sign in</p>
+                <button type='button'>Sign up</button>
+              </div>
             </div>
           </div>
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
