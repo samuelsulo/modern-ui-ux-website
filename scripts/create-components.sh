@@ -11,17 +11,17 @@ do
   style=$line
   touch $component_name.jsx $style.css
 
-  echo "import React from 'react'
+  echo "import React from 'react';
 import './$style.css';
 
 const $component_name = () => {
   return (
     <div>$component_name</div>
-  )
-}
+  );
+};
 
-export default $component_name" >> $component_name.jsx
+export default $component_name;" >> $component_name.jsx
 
   cd ..
-  echo "export { default as $component_name } from './$line/$component_name'" >> index.js;
+  echo "export { default as $component_name } from './$line/$component_name';" >> index.js;
 done
